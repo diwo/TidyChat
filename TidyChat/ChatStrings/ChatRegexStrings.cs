@@ -335,6 +335,14 @@ public static class ChatRegexStrings
             regexOptions)
     };
 
+    public static readonly LocalizedRegex FishMooch = new()
+    {
+        Jpn = new Regex(@"NeedsLocalization", regexOptions),
+        Eng = new Regex(@"^you recast your line with the fish still hooked", regexOptions),
+        Deu = new Regex(@"NeedsLocalization", regexOptions),
+        Fra = new Regex(@"NeedsLocalization", regexOptions)
+    };
+
     public static readonly Regex AetherialReductionSands = new(@".+handfuls of .+ .+sand are obtained\.", regexOptions);
 
     /// <see href="https://xivapi.com/LogMessage/2012?pretty=true">Area will be sealed off in 15 seconds</see>

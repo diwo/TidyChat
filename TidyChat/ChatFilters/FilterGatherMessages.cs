@@ -35,6 +35,9 @@ public sealed class FilterGatherMessages
                     L10N.Get(ChatStrings.MeasuringIlms).All(input.Contains))
             )
                 return false;
+
+            if (L10N.Get(ChatRegexStrings.FishMooch).IsMatch(input)) return false;
+
             return true;
         }
         catch (Exception e)
